@@ -15,7 +15,8 @@
 
 ## Workflow
 1. 注册Google Map API，填到config['google_map_key']
-2. 去某Guru, 填写你需要的房间信息，搜索，复制结果页的url，填到config['index_url']。
+2. Configure Selenium [Safari Driver](https://www.browserstack.com/guide/run-selenium-tests-on-safari-using-safaridriver)
+3. 去某Guru, 填写你需要的房间信息，搜索，复制结果页的url，填到config['index_url']。
 4. Crawl index info
 5. Parse the index info
 6. Crawl all property info according to the index info
