@@ -24,4 +24,4 @@
 9. Rank properties, save to the final output file.
 
 ## 注意
-最短路径使用Google Map Route API 获取。你需要申请Google Map API来使用该项目。注册账号后，将key填入config文件中。好消息：有免费额度。
+最短路径使用[Google Map Route API](https://developers.google.com/maps/documentation/routes/transit-route) 获取。你需要申请Google Map API来使用该项目。注册账号后，将key填入config文件中。好消息：有免费额度。
