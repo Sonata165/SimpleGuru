@@ -7,7 +7,7 @@
 - 性别/种族歧视
 - 隐藏房源数目上限
 
-本项目能够帮助你把PropertyGuru上的搜索结果汇总起来，按照我们设定的标准给房源打分，直接将top-tier房源呈现给我们，大大减少我们浪费在手动浏览上的成本。
+本项目能够帮助你把某Guru上的搜索结果汇总起来，按照我们设定的标准给房源打分，直接将top-tier房源呈现给我们，大大减少我们浪费在手动浏览上的成本。
 
 ## Supporting Platform
 
@@ -15,7 +15,7 @@
 
 ## Workflow
 1. 注册Google Map API，填到config['google_map_key']
-2. 去property guru, 填写你需要的房间信息，搜索，复制结果页的url，填到config['index_url']。
+2. 去某Guru, 填写你需要的房间信息，搜索，复制结果页的url，填到config['index_url']。
 4. Crawl index info
 5. Parse the index info
 6. Crawl all property info according to the index info
