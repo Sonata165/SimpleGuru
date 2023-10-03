@@ -1,0 +1,52 @@
+debug: False
+
+do_crawl_index: False
+do_parse_index: False
+do_crawl_properties: False
+do_parse_properties: False
+do_augment_info: False
+do_rank: True
+
+# For index crawling
+output_dir: ./results
+out_index_dir: ${output_dir}/index/crawled
+index_url: 'https://www.propertyguru.com.sg/property-for-rent?market=residential&beds[]=-1&listing_type=rent&minprice=800&maxprice=1200&MRT_STATIONS[]=EW24&MRT_STATIONS[]=JE5&MRT_STATIONS[]=NS1&MRT_STATIONS[]=EW23&MRT_STATIONS[]=EW22&MRT_STATIONS[]=CC22&MRT_STATIONS[]=EW21&MRT_STATIONS[]=EW20&MRT_STATIONS[]=EW19&MRT_STATIONS[]=EW18&MRT_STATIONS[]=EW17&MRT_STATIONS[]=EW16&MRT_STATIONS[]=NE3&MRT_STATIONS[]=TE17&MRT_STATIONS[]=EW15&MRT_STATIONS[]=CC21&MRT_STATIONS[]=CC20&MRT_STATIONS[]=CC19&MRT_STATIONS[]=DT9&MRT_STATIONS[]=CC23&MRT_STATIONS[]=CC24&MRT_STATIONS[]=CC25&freetext=EW24/NS1/JE5+Jurong+East+MRT,+EW23+Clementi+MRT,+EW22+Dover+MRT,+CC22/EW21+Buona+Vista+MRT,+EW20+Commonwealth+MRT,+EW19+Queenstown+MRT,+EW18+Redhill+MRT,+EW17+Tiong+Bahru+MRT,+EW16/NE3/TE17+Outram+Park+MRT,+EW15+Tanjong+Pagar+MRT,+CC21+Holland+Village+MRT,+CC20+Farrer+Road+MRT,+CC19/DT9+Botanic+Gardens+MRT,+CC23+One-North+MRT,+CC24+Kent+Ridge+MRT,+CC25+Haw+Par+Villa+MRT&search=true'
+out_index_fp: ${output_dir}/index/index.json
+
+# For info crawling and parsing
+out_info_dir: ${output_dir}/properties/crawled
+out_info_fp: ${output_dir}/properties/info.json
+
+# For augmentation
+data_util_fp: './results/alias.json'
+google_map_key: None
+aug_out_fp: ${output_dir}/properties/info_full.json
+place_work_1: '117416, Singapore' # AS6
+place_work_2: '117416, Singapore' # Your bf/gf's home address
+
+# For ranking
+rank_out_fp: ${output_dir}/rank.csv
+i_am_girl: False
+require_aircon: True
+price:
+  best: 800
+  worst: 1500
+size:
+  best: 300
+  worst: 80
+year:
+  best: 2020
+  worst: 1980
+work_1_time:
+  best: 20
+  worst: 40
+work_2_time:
+  best: 30
+  worst: 50
+weights:
+  price: 3
+  size: 4
+  year: 2
+  master: 5
+  time_work: 10
+  time_xx: 3

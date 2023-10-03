@@ -1,6 +1,7 @@
 .DS_Store
 private/
 archived/
+results/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
