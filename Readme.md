@@ -5,7 +5,7 @@
 - Filter功能辣鸡
 - 无法进行排序
 - 性别/种族歧视
-- 隐藏房源数目上限
+- 隐藏房源数目有上限限制
 
 本项目能够帮助你把某Guru上的搜索结果汇总起来，按照我们设定的标准给房源打分，直接将top-tier房源呈现给我们，大大减少我们浪费在手动浏览上的成本。
 
@@ -20,7 +20,7 @@
 5. Parse the index info
 6. Crawl all property info according to the index info
 7. Parse the property info
-8. Compute augment features for all properties.
+8. Compute augmenting features for all properties.
 9. Rank properties, save to the final output file.
 
 ## 注意
